@@ -14,7 +14,8 @@ body{
     
 }
 
-header{
+/*This is the header and its styles*/
+header {
     background-color: var(--Blue);
     text-align: end;
     padding:20px 0;
@@ -24,19 +25,21 @@ header{
     
 }
 
-li{
+li {
    display: inline; 
    margin-left: 1%;
    font-size: x-large;
    
 
 }
-a{
+a { 
     text-decoration: none;
     margin: 5px;
     padding: 5px;
     color: white;
 }
+/*The header styles end here*/
+
 
 main{
     display:flex;
@@ -45,7 +48,7 @@ main{
 }
 
 section{
-    flex:70%;
+    
     padding:20px;
 }
 
@@ -54,16 +57,17 @@ section{
     
 }
 aside{
-    justify-content: left;
+    justify-content: center;
 }
-.mainh {
+
+section h1 {
     font-size: 400%;
     color: #ffff;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.secondH{
+section h2{
     font-size: 300% ;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -71,7 +75,7 @@ aside{
 
 }
 
-p{
+section p{
     font-size: 250%;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -80,8 +84,21 @@ p{
     color: #ffff;
 }
 
-.pablof{
+section img{
    float: right;
 
 }
+
+@media screen and (max-width: 655px) {
+    main{ 
+
+        flex-wrap: wrap;
+    }
+
+    aside div{
+        justify-content: center;
+    }
+    
+}
+
 

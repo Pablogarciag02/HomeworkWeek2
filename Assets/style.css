@@ -93,7 +93,10 @@ section img{
     main{ 
 
         flex-wrap: wrap;
-        justify-content: center;
+    }
+
+    aside{
+        margin-left: 33%;
     }
 
    

@@ -32,18 +32,20 @@ li {
    
 
 }
-a { 
+header a { 
     text-decoration: none;
     margin: 5px;
     padding: 5px;
-    color: white;
+    color: var(--background);
+    font-weight: bold;
 }
 /*The header styles end here*/
 
 
 main{
     display:flex;
-    padding-top: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
 }
 
@@ -89,17 +91,83 @@ section img{
 
 }
 
+footer {
+    background-color: var(--Blue);
+    text-align: start;
+    padding:1px 0 ;
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    display:inline;
+    
+    
+    
+}
+
+footer h3{ 
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+    color: var(--background);
+   display: inline;
+
+    font-size: x-large;
+}
+
+footer h3 li a{
+    display: inline-block;
+}
+
+footer a {
+    text-decoration: none;
+color:var(--background);
+margin:5px;
+padding:5px;
+display: inline-block;
+font-size: x-large;
+font-weight: bold;
+
+}
+
+figure{
+    padding-bottom: 100px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.Box{
+    background-color: var(--Blue);
+    margin:10px;
+    padding: 10px;
+   
+    /*display:flex;
+    flex-wrap: wrap;*/
+
+}
+
+figure p{
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
 @media screen and (max-width: 655px) {
     main{ 
 
         flex-wrap: wrap;
+        padding-top: 1px;
     }
 
     aside{
-        margin-left: 33%;
+        margin: 33%;
     }
 
    
 }
 
+@media screen and (max-width: 1072px){
 
+
+}
